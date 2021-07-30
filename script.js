@@ -1,15 +1,15 @@
 const PRE = "DELTA";
 const SUF = "MEET";
-var room_id;
-var getUserMedia =
+let room_id;
+let getUserMedia =
   navigator.getUserMedia ||
   navigator.webkitGetUserMedia ||
   navigator.mozGetUserMedia;
-var local_stream;
-var screenStream;
-var peer = null;
-var currentPeer = null;
-var screenSharing = false;
+let local_stream;
+let screenStream;
+let peer = null;
+let currentPeer = null;
+let screenSharing = false;
 function createRoom() {
   console.log("Creating Room");
   let room = document.getElementById("room-input").value;
